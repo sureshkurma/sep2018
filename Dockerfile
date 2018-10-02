@@ -1,8 +1,7 @@
 FROM alpine
-
 COPY test.sh ./
-COPY test_file ./
-
 RUN chmod +x test.sh
-
-ENTRYPOINT ["./test.sh"]
+RUN pwd
+RUN ls -ls
+RUN cat test.sh
+ENTRYPOINT ["sh","/test.sh"]
