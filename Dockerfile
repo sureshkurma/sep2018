@@ -1,4 +1,4 @@
-FROM alpine
+FROM awscli
 COPY test.sh ./
 RUN chmod +x test.sh
 RUN pwd
